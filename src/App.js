@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from "./components/Sidebar";
+import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-container">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <nav>
+          <ul>
+            <li>Musique App Logo</li>
+            <li>Login/Sign Up</li>
+            <li>Search</li>
+            <li>Browse</li>
+          </ul>
+        </nav>
       </header>
+      <Sidebar />
+      <main>
+        <h1>Welcome to Musique App!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fuga
+          dolorum eaque rem, saepe laborum sit enim, ab sunt consequuntur
+          temporibus, rerum magni nesciunt earum hic eius beatae itaque quo?
+        </p>
+      </main>
+      <footer></footer>
     </div>
   );
 }
