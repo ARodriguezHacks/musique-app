@@ -1,18 +1,12 @@
 import Sidebar from "./components/Sidebar";
-import "./App.scss";
+import Nav from "./components/layout/Nav";
+import "./styles/App.scss";
 
 function App() {
   return (
-    <div className="app-container">
-      <header className="App-header">
-        <nav>
-          <ul>
-            <li>Musique App Logo</li>
-            <li>Login/Sign Up</li>
-            <li>Search</li>
-            <li>Browse</li>
-          </ul>
-        </nav>
+    <div className="app">
+      <header className="header">
+        <Nav />
       </header>
       <Sidebar />
       <main>

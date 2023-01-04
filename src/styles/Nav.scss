@@ -1,0 +1,17 @@
+.nav {
+  color: #fff;
+  height: 40px;
+  background: {
+    color: gray;
+  }
+
+  .nav--list-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: inherit;
+    max-width: 90%;
+    margin: 0;
+    padding: 0;
+  }
+}
